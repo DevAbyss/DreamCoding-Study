@@ -124,4 +124,41 @@ console.log(`value: ${text}, type: ${typeof text}`);
 text = '8' / '2';
 console.log(`value: ${text}, type: ${typeof text}`);
 
-console.log(text.charAt(0)); // TypeError, 현재 text는 number type이기 때문
+// console.log(text.charAt(0));
+// TypeError, 현재 text는 number type이기 때문
+
+// ! 보충 강의
+// number, string, boolean, null, undefined
+
+let number = 2;
+let number2 = number;
+console.log('number: ', number);
+console.log('number2: ', number2);
+
+number2 = 3;
+console.log('number: ', number);
+console.log('number2: ', number2);
+
+// object (위 type을 제외한 모든 type) - array, list, function 등
+let obj = {
+  name: 'ellie',
+  age: 5,
+};
+obj.name;
+console.log('obj.name: ', obj.name);
+
+let obj2 = obj; // obj가 가르키는 주소가 obj2에 복사돼서 들어옴
+console.log('obj2.name: ', obj2.name);
+
+obj.name = 'james';
+console.log('----------------');
+console.log('obj.name: ', obj.name);
+console.log('obj2.name: ', obj2.name);
+
+const obj3 = {
+  name: 'tom',
+  age: 21,
+};
+console.log('obj3.name: ', obj3.name);
+obj3.name = 'testName'; // object를 가르키는 reference는 다른 reference로 변경이 불가능 하지만, reference가 가르키는 object의 value는 변경 가능
+console.log('obj3.name: ', obj3.name);
