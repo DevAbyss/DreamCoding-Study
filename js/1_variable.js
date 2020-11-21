@@ -1,4 +1,4 @@
-// 1. Use strict
+// ! 1. Use strict
 // Whole-script strict mode syntax
 // why? JavaScript is very flexible
 // added ECMAScript 5
@@ -6,7 +6,7 @@
 // use this Vanilla JavaScript
 'use strict';
 
-// 2. Variable (Mutable)
+// ! 2. Variable (Mutable), rw(read/write)
 // let (added in ES6)
 let globalName = 'global name';
 {
@@ -29,8 +29,10 @@ console.log(globalName);
 }
 console.log(age);
 
-// 3. Constant (Immutable)
+// ! 3. Constant (Immutable), r(read)
 // 값을 한번 할당하면, 값이 절대로 바뀌지 않음
+// use const whenever possible
+// only use let if variable needs to change
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety: 다수의 thread가 동시에 변수에 접근해서 값을 변경 x
@@ -40,9 +42,19 @@ const maxNumber = 5;
 
 console.log(daysInWeek);
 
-// 4. Variable types
+// Note
+// Immutable data types: primitive types, frozen objects (i.e. object.freeze())
+// Mutable data types: all objects by default are mutable in JS
+// favor immutable data type always for a few reasons:
+// - security
+// - thread safety
+// - reduce human mistakes
+
+// ! 4. Variable types
 // primitive, single item(더 이상 작은 단위로 나눠질 수 없음): number, string, boolean, null, undefined, symbol
 // object, box container (single item들을 여러 개 묶어서 한 단위로 관리)
+// primitive type은 memory에 value가 저장
+// object type은 memory에 reference가 저장
 // function
 // cf) first-class function
 // - function도 다른 data type처럼 변수에 할당 가능
