@@ -1,3 +1,4 @@
+'use strict';
 // ! Function
 // - fundamental building block in the program
 // - subprogram can be used multiple times
@@ -171,16 +172,20 @@ const simpleMultiply = (a, b) => {
 // # function calculate (command, a, b)
 // # command: add, substract, divide, multiply, remainder
 const calculate = (command, a, b) => {
-  if (command === 'add') {
-    return a + b;
-  } else if (command === 'substract') {
-    return a - b;
-  } else if (command === 'divide') {
-    return a / b;
-  } else if (command === 'multiply') {
-    return a * b;
-  } else if (command === 'remainder') {
-    return a % b;
+  // 정해진 data를 처리할 경우 if문보다 switch문이 좋다.
+  switch (command) {
+    case 'add':
+      return a + b;
+    case 'substract':
+      return a - b;
+    case 'divide':
+      return a / b;
+    case 'multiply':
+      return a * b;
+    case 'remainder':
+      return a % b;
+    default:
+      throw Error('unknown command');
   }
 };
 
@@ -189,3 +194,4 @@ console.log(`substract: ${calculate('substract', 3, 1)}`);
 console.log(`divide: ${calculate('divide', 1, 2)}`);
 console.log(`multiply: ${calculate('multiply', 2, 5)}`);
 console.log(`remainder: ${calculate('remainder', 5, 2)}`);
+console.log(`Error: ${calculate('Error', 5, 2)}`);
