@@ -88,17 +88,17 @@ console.log(NewFruits);
 
 console.log('--- 5. Searching ---');
 // ! 5. Searching
-// IndexOf: find the index
+// @ IndexOf: find the index
 console.log(fruits);
 console.log(fruits.indexOf('사과'));
 console.log(fruits.indexOf('수박'));
 console.log(fruits.indexOf('코코넛'));
 
-// includes
+// @ includes
 console.log(fruits.includes('수박'));
 console.log(fruits.includes('코코넛'));
 
-// lastIndexOf
+// @ lastIndexOf
 fruits.push('사과');
 console.log(fruits);
 console.log(fruits.indexOf('사과')); // 0, 5 index에 '사과'가 있지만, 처음 나오는 0 index만 출력
