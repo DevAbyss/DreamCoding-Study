@@ -33,7 +33,8 @@ class UserStorage {
       ) {
         onSuccess(id);
       } else {
-        onError(new Error('not fount'));
+        // 'Error' class는 JavaScript에서 제공하는 Object
+        onError(new Error('not found'));
       }
     }, 2000);
   }
