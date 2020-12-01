@@ -1,5 +1,6 @@
 // Q1. make a string out of an array
 // 배열로 문자열 만들기
+// join
 {
   const fruits = ['apple', 'banana', 'orange'];
 
@@ -11,6 +12,7 @@
 
 // Q2. make an array out of a string
 // 문자열로 배열 만들기
+// split
 {
   const fruits = '🍎, 🥝, 🍌, 🍒';
 
@@ -22,6 +24,7 @@
 // Q3. make this array look like this: [5, 4, 3, 2, 1]
 // 이 배열을 다음과 같이 만드십시오 : [5, 4, 3, 2, 1]
 // 원본 array도 바뀜
+// reverse
 {
   const array = [1, 2, 3, 4, 5];
 
@@ -32,6 +35,7 @@
 
 // Q4. make new array without the first two elements
 // 처음 두 element 없이 새 배열 만들기
+// slice
 {
   const array = [1, 2, 3, 4, 5];
 
@@ -61,6 +65,7 @@ const students = [
 
 // Q5. find a student with the score 90
 // 90 점의 학생 찾기
+// find
 {
   const result = students.find((student) => student.score === 90);
   console.log('Q5: ', result);
@@ -68,6 +73,7 @@ const students = [
 
 // Q6. make an array of enrolled students
 // 등록 된 학생들의 배열
+// filter
 {
   const result = students.filter((student) => student.enrolled === true);
   console.log('Q6: ', result);
@@ -76,6 +82,7 @@ const students = [
 // Q7. make an array containing only the students' scores
 // 학생의 점수만 포함하는 배열 만들기
 // result should be: [45, 80, 90, 66, 88]
+// map
 {
   const result = students.map((student) => student.score);
   console.log('Q7: ', result);
@@ -83,6 +90,7 @@ const students = [
 
 // Q8. check if there is a student with the score lower than 50
 // 50 점 미만의 학생이 있는지 확인
+// some, every
 {
   // # 배열 중에 어떤 것이라도 하나 만족되는 것이 있는지 없는지 확인할 때는 some 사용
   const result = students.some((student) => student.score < 50);
@@ -95,6 +103,7 @@ const students = [
 
 // Q9. compute students' average score
 // 학생들의 평균 점수 계산
+// reduce
 {
   const sum = students.reduce((prev, curr) => prev + curr.score, 0);
   const average = sum / students.length;
@@ -104,6 +113,7 @@ const students = [
 // Q10. make a string containing all the scores
 // 모든 점수를 포함하는 문자열 만들기
 // result should be: '45, 80, 90, 66, 88'
+// map, join
 {
   const result = students.map((student) => student.score).join(', ');
   console.log('Q10: ', result);
@@ -112,6 +122,7 @@ const students = [
 // Bonus! do Q10 sorted in ascending order
 // Q10을 오름차순으로 정렬
 // result should be: '45, 66, 80, 88, 90'
+// map, sort, join
 {
   const result = students
     .map((student) => student.score)
