@@ -10,8 +10,57 @@
 </head>
 <!-- body: 사용자에게 보여지는 최상위 container -->
 <body>
-  <h1>Heading1</h1>
-  <h2>Heading2</h2>
-  <button>Click Me!</button>
+  <!-- Box vs Item -->
+  <div>Box vs Item</div>
+  <!-- Box: 사용자에게 보여지지 않는 부분 -->
+  <header></header>
+  <footer></footer>
+  <section></section>
+  <div></div>
+  <span></span>
+
+  <!-- Item: 사용자에게 보여지는 부분 -->
+  <h1></h1>
+  <button></button>
+
+  <!-- <a>: anchor tag -->
+  <a href="https:google.com" target="_blank">Click</a>
+
+  <br>
+  <br>
+  <hr>
+  <br>
+
+  <!-- Block vs Inline -->
+  <div>Block vs Inline</div>
+  <!-- 
+    Block: 혼자 한 줄을 완전히 차지
+    Inline: 줄바꿈 없이 한 줄에 다른 요소와 나란히 배치
+  -->
+
+  <!-- <p>: 문단을 정의할 때 사용 -->
+  <p>This is a sentence. <b>That</b> is ..</p>
+  <!-- <span>은 inline 단위이기 때문에 줄바꿈 미발생 -->
+  <p>This is a sentence. <span style="color: red;">That</span> is ..</p>
+  <!-- <div>는 block 단위이기 때문에 줄바꿈 발생 -->
+  <p>This is a sentence. <div style="color: red;">That</div> is ..</p> 
+
+  <!-- List: <ol>, <ul>, <li> -->
+  <!-- <ol>: Ordered List -->
+  <ol type="i" reversed>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+  </ol>
+  <!-- <ul>: Unordered List -->
+  <ul>
+    <li>Hello</li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <!-- Input과 type -->
+  <label for="input_name">Name: </label>
+  <input id="input_name" type="text"> <!-- type 종류는 MDN에서 확인 -->
 </body>
 </html>
