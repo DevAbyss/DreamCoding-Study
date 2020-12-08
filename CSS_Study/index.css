@@ -1,0 +1,42 @@
+/* 
+  사용법
+  selector {
+    property: value;
+*/
+
+/* Universal Selector*/
+* {
+  color: green;
+}
+
+/* type Selector */
+li {
+  color: blue;
+}
+
+/* ID Selector */
+li#special {
+  color: pink;
+}
+
+/* Class Selector */
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+/* State Selector */
+button:hover {
+  color: red;
+  background-color: beige;
+}
+
+/* Attribute Selector */
+a[href] {
+  color: purple;
+}
+
+a[href='naver.com'] {
+  color: greenyellow;
+}
