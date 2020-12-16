@@ -1,0 +1,58 @@
+/* 사용법
+  selector {
+    property: value;
+  }
+*/
+/*  */
+/* Universal Selector */
+* {
+  color: green;
+}
+
+/* Type Selector */
+li {
+  color: blue;
+}
+
+/* ID Selector */
+li#special {
+  color: pink;
+}
+
+/* Class Selector */
+.red {
+  width: 100px;
+  height: 100px;
+  background: red;
+}
+
+.blue {
+  width: 100px;
+  height: 100px;
+  /*
+    padding: content 안에 들어가는 spacing
+    margin: content 밖에 들어가는 spacing
+    첫번째 value부터 상, 우, 하, 좌 순
+    value를 2개만 쓰면 첫번째 value는 상하,
+    두번째 value는 좌우
+  */
+  padding: 20px 20px 20px 20px;
+  margin: 20px;
+  /*
+    첫번째 value부터
+    width, style, color 순
+  */
+  border: 6px dashed red;
+  background: blue;
+}
+
+/* State Selector */
+button:hover {
+  color: red;
+  background: beige;
+}
+
+/* Attribute Selector */
+a[href^='naver'] {
+  color: purple;
+}

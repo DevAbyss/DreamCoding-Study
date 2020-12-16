@@ -1,0 +1,64 @@
+/* ! display css */
+/* div,
+span {
+  width: 80px;
+  height: 80px;
+  margin: 20px;
+}
+
+div {
+  background: red;
+  display: inline;
+}
+
+span {
+  background: blue;
+  display: block;
+} */
+
+/* ! position css */
+/* 
+  position의 default value는
+  static
+*/
+div {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  background: red;
+}
+
+.container {
+  background: yellow;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.relative-box {
+  background: blue;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute-box {
+  background: green;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.fixed-box {
+  background: gray;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+.sticky-box {
+  background: pink;
+  position: sticky;
+  top: 20px;
+  left: 20px;
+}
