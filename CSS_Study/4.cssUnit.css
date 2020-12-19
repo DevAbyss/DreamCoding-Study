@@ -1,0 +1,43 @@
+html {
+  /* 브라우저에서 지정된 font-size를 따라간다는 것 */
+  font-size: 100%;
+}
+
+body {
+  color: white;
+  background-color: #293039;
+}
+
+.percent {
+  width: 80%;
+  font-size: 24px;
+  background-color: burlywood;
+  /* margin-bottom: 20px; */
+}
+
+div {
+  border: 1px solid white;
+  margin: 32px;
+}
+
+/* ! em */
+.em-parent {
+  /* 8em = 16px*8 = 128px */
+  font-size: 8em;
+}
+
+.em-child {
+  /* 0.5em = 128px*0.5 = 64px */
+  font-size: 0.5em;
+}
+
+/* ! rem */
+.rem-parent {
+  /* 8rem = 16px*8 = 128px */
+  font-size: 8rem;
+}
+
+.rem-child {
+  /* 0.5em = 16px*0.5 = 8px */
+  font-size: 0.5rem;
+}
