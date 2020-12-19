@@ -1,0 +1,48 @@
+/* ! em 예제 css */
+h1 {
+  display: inline-block;
+  font-size: 5em;
+  background-color: mediumaquamarine;
+  padding: 1em;
+}
+
+/* ! rem 예제 css */
+.component {
+  width: 50%;
+  border: 1px solid burlywood;
+  font-size: 2rem;
+}
+
+.title {
+  padding: 0.5em 0.5rem;
+  background-color: burlywood;
+}
+
+.contents {
+  font-size: 1rem;
+  padding: 0.5em 0.5rem;
+}
+
+@media screen and (max-width: 780px) {
+  /* ! em 예제 css */
+  h1 {
+    font-size: 3em;
+  }
+
+  /* ! rem 예제 css */
+  .component {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  /* ! em 예제 css */
+  h1 {
+    font-size: 1.5em;
+  }
+
+  /* ! rem 예제 css */
+  .component {
+    font-size: 0.75rem;
+  }
+}
